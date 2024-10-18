@@ -44,7 +44,8 @@ function traduzirGenero(gender) {
     }
 }
 
-button.addEventListener('click', () => {
+// Função para realizar a busca
+function realizarBusca() {
     const searchTerm = txtBuscar.value;
     let url;
 
@@ -79,4 +80,14 @@ button.addEventListener('click', () => {
             info.textContent = "";
             imagem.src = "";
         });
+}
+
+// Escuta o evento de clique no botão
+button.addEventListener('click', realizarBusca);
+
+// Escuta o evento de pressionar a tecla Enter no campo de texto
+txtBuscar.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        realizarBusca();
+    }
 });
