@@ -1,6 +1,6 @@
- @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -8,66 +8,131 @@
     outline: none;
     font-family: "Creepster", system-ui;
     font-size: 18px;
-   
-    
 }
 
-body{
-    
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #000, #000,#70d9f6);
+    background: linear-gradient(to bottom, #000, #000, #70d9f6);
     flex-direction: column;
 }
 
-#text{
+#text {
     color: #13768a;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #3fad76;
-    
     font-size: 150px;
     padding: 5px;
     text-align: center;
     justify-content: center;
 }
 
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    #text {
+        font-size: 80px; /* Diminui o tamanho do texto em telas menores */
+    }
+
+    #buscar {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        gap: 20px;
+    }
+
+    #buscar input {
+        width: 100%; /* Faz o campo de texto ocupar toda a largura */
+    }
+
+    #buscar button {
+        width: 100px;
+        align-self: center;
+    }
+
+    .book {
+        width: 100%; /* Faz a div ocupar toda a largura */
+        height: auto; /* Permite altura automática para acomodar o conteúdo */
+        flex-direction: column; /* Muda a direção do layout em telas menores */
+    }
+
+    #nome {
+        font-size: 50px; /* Ajusta o tamanho do título */
+        margin: 10px;
+    }
+
+    #info {
+        font-size: 18px; /* Ajusta o tamanho do texto de informações */
+        margin: 10px;
+    }
+
+    #imagem {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 20px; /* Ajusta o border-radius para uma aparência mais suave */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #text {
+        font-size: 50px; /* Ajusta o tamanho do título para telas muito pequenas */
+    }
+
+    #buscar {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #buscar input {
+        height: 25px;
+    }
+
+    #buscar button {
+        height: 25px;
+    }
+
+    .book {
+        border-radius: 20px; /* Ajusta o border-radius para telas muito pequenas */
+    }
+
+    #nome {
+        font-size: 30px; /* Ajusta o tamanho do nome do personagem */
+    }
+
+    #info {
+        font-size: 14px; /* Ajusta o tamanho das informações */
+    }
+}
 
 #buscar {
     align-items: center;
     margin-top: 10px;
-    padding: 24px; 
+    padding: 24px;
     display: flex;
     gap: 40px;
-    
-    
 }
-#buscar input{
+
+#buscar input {
     border-radius: 10px;
     width: 350px;
     height: 30px;
     color: #000;
-    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.7);
     background-color: #f0ffff;
-    
-    
 }
-#buscar button{
-    
+
+#buscar button {
     border-radius: 10px;
     width: 100px;
     height: 30px;
     background: #87cefa;
     color: #000;
-    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.7);
     cursor: pointer;
-
 }
-#buscar button:hover{
+
+#buscar button:hover {
     background: #ffff00;
 }
-
 
 .book {
     margin-top: 20px 0 15px 0;
@@ -76,36 +141,31 @@ body{
     height: 550px;
     background: #f0ffff;
     display: flex;
-    background: linear-gradient(to bottom, #70d9f6, #3fad76,#000 );
+    background: linear-gradient(to bottom, #70d9f6, #3fad76, #000);
     border-radius: 40px;
-    
 }
- 
-#esquerda{
-   
-   display: block; 
 
+#esquerda {
+    display: block;
 }
-#nome{
+
+#nome {
     font-size: 80px;
     margin: 24px;
 }
-#info{
-    
+
+#info {
     font-size: 25px;
     margin: 24px;
 }
- #direita{
 
+#direita {
     top: 70%;
     bottom: 100px;
-    padding:auto;
+    padding: auto;
     align-items: center;
-    
- }
- #imagem{
+}
+
+#imagem {
     border-radius: 100px;
-    
-
-
- }
+}
