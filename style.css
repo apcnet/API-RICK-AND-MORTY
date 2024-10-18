@@ -1,0 +1,114 @@
+ @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Creepster", system-ui;
+    font-size: 18px;
+   
+    
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000, #000,#70d9f6);
+    flex-direction: column;
+}
+
+#text{
+    color: #13768a;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #3fad76;
+    
+    font-size: 150px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#buscar {
+    align-items: center;
+    margin-top: 10px;
+    padding: 24px; 
+    display: flex;
+    gap: 40px;
+    
+    
+}
+#buscar input{
+    border-radius: 10px;
+    width: 350px;
+    height: 30px;
+    color: #000;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.7);
+    background-color: #f0ffff;
+    
+    
+}
+#buscar button{
+    
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background: #87cefa;
+    color: #000;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+
+}
+#buscar button:hover{
+    background: #ffff00;
+}
+
+
+.book {
+    margin-top: 20px 0 15px 0;
+    position: relative;
+    width: 800px;
+    height: 550px;
+    background: #f0ffff;
+    display: flex;
+    background: linear-gradient(to bottom, #70d9f6, #3fad76,#000 );
+    border-radius: 40px;
+    
+}
+ 
+#esquerda{
+   
+   display: block; 
+
+}
+#nome{
+    font-size: 80px;
+    margin: 24px;
+}
+#info{
+    
+    font-size: 16px;
+    margin: 24px;
+}
+ #direita{
+    
+    position: relative;
+    top: 350px ;
+    right: 600px;
+    left: auto;
+    bottom: 100px;
+    padding:auto;
+    align-items: center;
+    
+ }
+ #imagem{
+    border-radius: 100px;
+    
+
+
+ }
